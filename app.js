@@ -26,7 +26,7 @@ let cart = [];
 class Products {
   async getProducts() {
     try {
-      const result = await fetch("data/products.json"); //returns response object
+      const result = await fetch("products.json"); //returns response object
       let products = await result.json(); // to get the data from response object
       let data = products.items;
       data = data.map((item) => {
